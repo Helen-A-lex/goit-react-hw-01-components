@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-
 export const Section = styled.section`
   margin-top: 40px;
   margin-bottom: 40px;

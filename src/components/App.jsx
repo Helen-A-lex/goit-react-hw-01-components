@@ -10,7 +10,7 @@ import { FriendsList } from './FriendsList/FriendsList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 export const App = () => {
   return (
-    <Layout>
+  <Layout>
     <GlobalStyle/>
     <Profile
   username={user.username}
@@ -20,10 +20,8 @@ export const App = () => {
   stats={user.stats}
       />
     <Statistics title="Upload stats" stats={data}/>
-      {/* <Statistics stats={data} /> */}
-      
-      <FriendsList friends={friends} />
-      <TransactionHistory items={transactions} />
-   </Layout>
+    <FriendsList friends={friends} />
+    <TransactionHistory items={transactions} />
+  </Layout>
   );
 };
